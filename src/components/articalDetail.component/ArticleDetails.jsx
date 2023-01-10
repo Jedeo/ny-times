@@ -28,10 +28,10 @@ const ArticleDetails = () => {
 
   return (
     <div className="article-container">
-      <div>
-        <img src={multimedia?.[0]?.url} alt={multimedia?.[0].caption} />
+      <div className="image-container">
+        <img className="detail-image"src={multimedia?.[0]?.url} alt={multimedia?.[0].caption} />
       </div>
-      <div>
+      <div className="details-container">
         <h2>{title}</h2>
         <p>
           {abstract} <a href={short_url}>read more</a>{" "}

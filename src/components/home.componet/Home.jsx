@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { getArticles } from "../../apICalls/getArticles";
+import { useNavigate } from "react-router-dom";
 import Article from "../article.component/Article";
 
 import "./Home.css";
 const Home = () => {
+const navigate = useNavigate()
   const [allArticles, setAllArticles] = useState([]);
   useEffect(() => {
     const fetchArticles = async () => {
@@ -17,7 +19,7 @@ const Home = () => {
   const displayArticle = allArticles?.map((article) => {
     const sortedUrl = article.multimedia.sort((a, b) => a.height - b.height);
     return (
-      <li key={article.title}>
+      <li key={article.title} className="article-container" onClick={()=> navigate(`/article/${article.title}`)}>
         <Article
           title={article.title}
           author={article.byline}

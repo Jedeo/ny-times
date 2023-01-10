@@ -13,3 +13,31 @@ img{
 img:hover{
     cursor: pointer;
 }
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .article-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+    }
+    img, .article-title, .article-author{
+        width: 99vw;
+        margin: 20px;
+        margin-bottom: 0;
+        height: auto;
+    }
+
+    .article-title, .article-author{
+        margin-top:0;
+
+    }
+
+    .article-title{
+        margin-bottom: 5px;
+    }
+    
+
+}

@@ -6,7 +6,24 @@
     align-self: center;
 }
 
-.home-container{
- 
-   
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .articles-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+    .home-container{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    figure{
+        margin: 0;
+    }
 }

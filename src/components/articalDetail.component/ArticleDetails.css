@@ -2,3 +2,30 @@
     display: flex;
     justify-content: space-around;
 }
+
+@media only screen 
+and (min-device-width : 52px) 
+and (max-device-width : 14000px) {
+    .article-container{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        margin: 20px;
+    }
+    .image-container{
+        display: flex;
+        align-items: baseline;
+        padding: 0;
+        margin: 0;
+    }
+
+    .detail-image{
+        width: 25rem;
+        margin-top: 10px;
+    }
+
+    .details-container{
+        width: 25rem;
+    }
+
+}
