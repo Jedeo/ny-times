@@ -8,6 +8,7 @@ img{
     width: 400px;
     margin: 10px;
     margin-bottom: 0;
+    border-radius: 12px;
 } 
 
 img:hover{
@@ -24,7 +25,7 @@ and (max-device-width : 480px) {
         margin: 0px;
     }
     img, .article-title, .article-author{
-        width: 99vw;
+        width: 98vw;
         margin: 20px;
         margin-bottom: 0;
         height: auto;

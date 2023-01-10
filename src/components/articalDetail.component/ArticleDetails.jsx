@@ -25,11 +25,7 @@ const ArticleDetails = () => {
       setArticle(clickedArticle);
     };
     fetchArticle();
-  }, []);
-
-  console.log(article);
-
- 
+  }, []); 
 
   return (<>{!loading ?  <video autoPlay loop muted> <source src={load} type="video/mp4"/></video> : <div className="article-container">
   <div className="image-container">

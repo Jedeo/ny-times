@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import "./Filter.css"
 
 const Filter = ({filter, allArticles, fetchArticles, setFiltered})  => {
     const [selected, setSelected] = useState("All")
@@ -11,11 +12,9 @@ const Filter = ({filter, allArticles, fetchArticles, setFiltered})  => {
         setSelected(e.currentTarget.value)
         setFiltered(filtered) 
     }
-
-   console.log(selected);
     
     return (<form action="">
-        <select name="" id="" onLoad={()=> setFiltered(allArticles) } onChange={(e)=> handleFilter(e)}>
+        <select className='filter-dropDown' name="" id="" onLoad={()=> setFiltered(allArticles) } onChange={(e)=> handleFilter(e)}>
             <option value="All" onSelect={(e)=> console.log(e.currentTarget)}> All </option>
             {options}
         </select>

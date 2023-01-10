@@ -40,7 +40,7 @@ const navigate = useNavigate()
   const displayArticle = filtered?.map((article) => {
     const sortedUrl = article.multimedia?.sort((a, b) => a.height - b.height);
     return (
-      <li key={article.title} className="article-container" onClick={()=> navigate(`/article/${article.title}`)}>
+      <li aria-label={article.title}key={article.title} className="article-container" onClick={()=> navigate(`/article/${article.title}`)}>
         {!loading ? <video autoPlay muted loop> <source src={load} type="video/mp4"/></video> : <Article
           title={article.title}
           author={article.byline}
@@ -55,7 +55,7 @@ const navigate = useNavigate()
   return (
     <div className="home-container">
       <Filter filter={filter} allArticles={allArticles} setAllArticles={setAllArticles} setFiltered={setFiltered} fetchArticles={fetchArticles}/>
-      <ul className="articles-container">{displayArticle} </ul>
+      <ul  className="articles-container" aria-label="List of articles">{displayArticle} </ul>
     </div>
   );
 };
