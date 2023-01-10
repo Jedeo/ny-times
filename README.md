@@ -23,15 +23,14 @@ Install my-project with npm
     ```
     npm install
     npm start
-  ```
     
 ## Technologies Used
+
 ![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) 
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) 
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) 
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
-
 
 ## Environment Variables
 
@@ -44,4 +43,8 @@ To run this project, you will need to add the following environment variables to
 ## Authors
 
 - [Jedeo](https://www.github.com/Jedeo)
+
+
+
+
 
