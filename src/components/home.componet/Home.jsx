@@ -17,14 +17,14 @@ const navigate = useNavigate()
   }, []);
 
   const displayArticle = allArticles?.map((article) => {
-    const sortedUrl = article.multimedia.sort((a, b) => a.height - b.height);
+    const sortedUrl = article.multimedia?.sort((a, b) => a.height - b.height);
     return (
       <li key={article.title} className="article-container" onClick={()=> navigate(`/article/${article.title}`)}>
         <Article
           title={article.title}
           author={article.byline}
-          img={sortedUrl[1].url}
-          alt={article.multimedia[0].caption}
+          img={sortedUrl?.[1].url}
+          alt={article.multimedia?.[0]?.caption}
         />
       </li>
     );

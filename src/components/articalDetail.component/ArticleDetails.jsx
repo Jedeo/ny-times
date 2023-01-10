@@ -21,20 +21,18 @@ const ArticleDetails = () => {
 
   console.log(article);
 
-  const { abstract, title, byline, short_url, multimedia, published_date } =
-    article;
-  console.log(multimedia?.[0]);
+  const { abstract, title, byline, short_url, multimedia, published_date } = article;
   const date = new Date(published_date)
 
   return (
     <div className="article-container">
       <div className="image-container">
-        <img className="detail-image"src={multimedia?.[0]?.url} alt={multimedia?.[0].caption} />
+        <img className="detail-image"src={multimedia?.[0]?.url} alt={multimedia?.[0]?.caption} />
       </div>
       <div className="details-container">
         <h2>{title}</h2>
         <p>
-          {abstract} <a href={short_url}>read more</a>{" "}
+          {abstract} <a href={short_url}>read more</a>
         </p>
         <p>published: {date.toLocaleDateString()}</p>
         <h3>{byline}</h3>

@@ -1,0 +1,30 @@
+.home-icon {
+    width: 40px;
+    margin: 10px;
+}
+
+.nav-container{
+    background-color:antiquewhite;
+    position:fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    bottom: 0
+}
+
+@media only screen 
+and (min-device-width : 52px) 
+and (max-device-width : 14000px) {
+    .home-icon {
+        width: 60px;
+        margin: 10px;
+    }
+    .nav-container{
+        background-color:aquamarine;
+        position:fixed;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        bottom: 0;
+    }
+}
