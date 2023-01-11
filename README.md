@@ -11,13 +11,9 @@ This application, NY-Times, provides users with an easy way to stay informed by 
 ## Setup
   1. From your terminal, `cd` back to your parent directory
   2. Clone down this repository:
-    ```
-    git@github.com:Jedeo/ny-times.git
-    ```
+    ```git@github.com:Jedeo/ny-times.git```
   3. `cd` into `ny-times` directory and run:
-    ```
-    npm install
-    npm start
+    ```npm install npm start```
     
 ## Technologies Used
 
