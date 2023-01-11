@@ -3,6 +3,17 @@
     justify-content: space-around;
 }
 
+.article-details-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.loading{
+    width: 400px;
+    align-self: center;
+    margin-top: 10em;
+}
+
 @media only screen 
 and (min-device-width : 52px) 
 and (max-device-width : 14000px) {

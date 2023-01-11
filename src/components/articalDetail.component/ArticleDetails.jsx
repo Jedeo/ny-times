@@ -27,7 +27,7 @@ const ArticleDetails = () => {
     fetchArticle();
   }, []); 
 
-  return (<>{!loading ?  <video autoPlay loop muted> <source src={load} type="video/mp4"/></video> : <div className="article-container">
+  return (<div className="article-details-container">{!loading ?  <video className="loading"autoPlay loop muted > <source src={load} type="video/mp4"/></video> : <div className="article-container">
   <div className="image-container">
     <img className="detail-image"src={multimedia?.[0]?.url} alt={multimedia?.[0]?.caption} />
   </div>
@@ -39,7 +39,7 @@ const ArticleDetails = () => {
     <p>published: {date.toLocaleDateString()}</p>
     <h3>{byline}</h3>
   </div>
-</div>}</>
+</div>}</div>
    
   );
 };
