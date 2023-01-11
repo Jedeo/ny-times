@@ -10,22 +10,24 @@ const ArticleDetails = () => {
   const [article, setArticle] = useState({});
   const [loading, setLoading] = useState(false)
 
-  const { abstract, title, byline, short_url, multimedia, published_date } = article;
+  const { title, byline, abstract,short_url, multimedia, published_date } = article;
   const date = new Date(published_date)
 
 
   useEffect(() => {
-    
     const fetchArticle = async () => {
       const articles = await getArticles();
+      console.log(articles);
       const clickedArticle = articles.find(
-        (article) => article.title === articleTitle.title
+        (article) => {
+          return article.title === articleTitle.title || article.title === articleTitle.title + "?"}
       );
       setLoading(true)
       setArticle(clickedArticle);
     };
     fetchArticle();
   }, []); 
+
 
   return (<div className="article-details-container">{!loading ?  <video className="loading"autoPlay loop muted > <source src={load} type="video/mp4"/></video> : <div className="article-container">
   <div className="image-container">
