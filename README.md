@@ -1,7 +1,7 @@
 
-# In-The-News
+# NY-Times
 
-This application provides users with the ability to interact with articles provided by New York Times API Top Stories API using In-The-News. The user can see a list of articles, click on one of the articles that interest them, and the user will be able to learn more about the article. It is intended for users who would like to have a quick look at a particular article before diving deep into it.
+This application, NY-Times, provides users with an easy way to stay informed by allowing them to interact with articles from the New York Times Top Stories API. It features a user-friendly interface with a navigation menu and filters to help users quickly find the articles that interest them. When a user clicks on an article, the application displays the article in an easy-to-read format that includes the headline, author, publication date, and a brief summary.
 
 
 ## Screenshots
