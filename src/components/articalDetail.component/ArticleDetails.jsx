@@ -12,14 +12,14 @@ const ArticleDetails = () => {
 
   const { title, byline, abstract,short_url, multimedia, published_date } = article;
   const date = new Date(published_date)
-
+  const storedTitle = localStorage.getItem("title")
 
   useEffect(() => {
     const fetchArticle = async () => {
       const articles = await getArticles();
       const clickedArticle = articles.find(
         (article) => {
-          return article.title === articleTitle.title || article.title === articleTitle.title + "?"}
+          return article.title === articleTitle.title || article.title === storedTitle}
       );
       setLoading(true)
       setArticle(clickedArticle);
