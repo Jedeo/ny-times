@@ -14,6 +14,11 @@
     margin-top: 10em;
 }
 
+.detail-image:hover {
+   width: 700px;
+   cursor: zoom-in;
+}
+
 @media only screen 
 and (min-device-width : 52px) 
 and (max-device-width : 14000px) {
