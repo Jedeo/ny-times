@@ -7,9 +7,6 @@ This application, NY-Times, provides users with an easy way to stay informed by 
 ## Screenshots
 ![Untitled (1920 × 1080 px) (Website) (1500 × 768 px) (1700 × 768 px) (1900 × 768 px) (1900 × 1200 px) (1900 × 900 px) (1900 × 800 px)](https://user-images.githubusercontent.com/16736352/211704674-6a5f5af6-003a-4ef1-9e45-d9af8e6fac47.gif)
 
-## Setup
-
-Install my-project with npm
 
 ## Setup
   1. From your terminal, `cd` back to your parent directory
