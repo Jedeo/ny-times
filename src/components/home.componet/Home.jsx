@@ -44,7 +44,6 @@ const Home = () => {
         className="article-container"
         onClick={() => navigate(`/article/${article.title}`)}
       >
-        {" "}
         <Article
           title={article.title}
           author={article.byline}
