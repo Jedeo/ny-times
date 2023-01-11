@@ -35,7 +35,7 @@ const ArticleDetails = () => {
   <div className="details-container">
     <h2>{title}</h2>
     <p>
-      {abstract} <a href={short_url}>read more</a>
+      {abstract} <a target="_blank" href={short_url}>read more</a>
     </p>
     <p>published: {date.toLocaleDateString()}</p>
     <h3>{byline}</h3>

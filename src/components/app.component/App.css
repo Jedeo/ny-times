@@ -6,10 +6,20 @@
   height: 40vmin;
   pointer-events: none;
 }
+.error{
+  margin-top: 8em;
+  text-align: center;
+  font-size: 2vw;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+  }
+  .error{
+    margin-top: 8em;
+    text-align: center;
+    font-size: 4vw;
   }
 }
 

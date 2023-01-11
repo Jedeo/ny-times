@@ -1,38 +1,22 @@
 import { useEffect, useState } from "react";
-import { getArticles } from "../../apICalls/getArticles";
 import Article from "../article.component/Article";
 import load from "../../resources/loading.mp4";
-import Filter from "../filter.componet/Filter";
+import Filter from "../filter.component/Filter";
 
 import "./Home.css";
-const Home = () => {
-  
-  const [allArticles, setAllArticles] = useState([]);
-  const [filter, setFilter] = useState([]);
+const Home = ({
+  filter,
+  loading,
+  allArticles,
+  setAllArticles,
+  fetchArticles,
+}) => {
   const [filtered, setFiltered] = useState([]);
-  const [loading, setLoading] = useState(false);
-  useEffect(() => {
-    fetchArticles();
-  }, []);
-
   useEffect(() => {
     if (filtered.length === 0) {
       setFiltered(allArticles);
     }
   }, [filtered, allArticles]);
-
-  const fetchArticles = async () => {
-    const listOfFilters = [];
-    const articles = await getArticles();
-    setLoading(true);
-    articles.forEach((article) => {
-      if (!listOfFilters.includes(article.section)) {
-        listOfFilters.push(article.section);
-      }
-    });
-    setFilter(listOfFilters);
-    setAllArticles(articles);
-  };
 
   const displayArticle = filtered?.map((article) => {
     const sortedUrl = article.multimedia?.sort((a, b) => a.height - b.height);
