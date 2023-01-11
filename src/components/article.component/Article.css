@@ -4,14 +4,14 @@
     
 }
 
-img{
+.article-image{
     width: 400px;
     /* margin: 10px; */
     margin-bottom: 0;
     border-radius: 12px;
 } 
 
-img:hover{
+article-image:hover{
     cursor: pointer;
 }
 
@@ -24,7 +24,7 @@ and (max-device-width : 480px) {
         align-items: center;
         margin: 0px;
     }
-    img, .article-title, .article-author{
+    .article-image, .article-title, .article-author{
         width: 98%;
         /* margin: 20px; */
         margin-bottom: 0;

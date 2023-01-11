@@ -17,7 +17,6 @@ const ArticleDetails = () => {
   useEffect(() => {
     const fetchArticle = async () => {
       const articles = await getArticles();
-      console.log(articles);
       const clickedArticle = articles.find(
         (article) => {
           return article.title === articleTitle.title || article.title === articleTitle.title + "?"}
