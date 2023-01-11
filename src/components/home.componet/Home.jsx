@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
 import { getArticles } from "../../apICalls/getArticles";
-import { useNavigate } from "react-router-dom";
 import Article from "../article.component/Article";
 import load from "../../resources/loading.mp4";
 import Filter from "../filter.componet/Filter";
 
 import "./Home.css";
 const Home = () => {
-  const navigate = useNavigate();
+  
   const [allArticles, setAllArticles] = useState([]);
   const [filter, setFilter] = useState([]);
   const [filtered, setFiltered] = useState([]);
@@ -42,7 +41,6 @@ const Home = () => {
         aria-label={article.title}
         key={article.title}
         className="article-container"
-        onClick={() => navigate(`/article/${article.title}`)}
       >
         <Article
           title={article.title}
