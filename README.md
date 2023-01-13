@@ -8,10 +8,38 @@ This application, NY-Times, provides users with an easy way to stay informed by 
 ![Untitled (1920 × 1080 px) (Website) (1500 × 768 px) (1700 × 768 px) (1900 × 768 px) (1900 × 1200 px) (1900 × 900 px) (1900 × 800 px)](https://user-images.githubusercontent.com/16736352/211704674-6a5f5af6-003a-4ef1-9e45-d9af8e6fac47.gif)
 
 
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone git@github.com:Jedeo/ny-times.git
+```
+
+Go to the project directory
+
+```bash
+  cd ny-times
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+
 ## Setup
   1. From your terminal, `cd` back to your parent directory
   2. Clone down this repository:
-    ```git@github.com:Jedeo/ny-times.git```
+    ``````
   3. `cd` into `ny-times` directory and run:
     ```npm install npm start```
     
