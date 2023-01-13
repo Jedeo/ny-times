@@ -10,8 +10,7 @@ const ArticleDetails = () => {
   const [article, setArticle] = useState({});
   const [loading, setLoading] = useState(false);
 
-  const { title, byline, abstract, short_url, multimedia, published_date } =
-    article;
+  const { title, byline, abstract, short_url, multimedia, published_date } = article;
 
   const date = new Date(published_date);
   const storedTitle = localStorage.getItem("title");
