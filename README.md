@@ -39,14 +39,6 @@ Start the server
 ```bash
   npm run start
 ```
-
-
-## Setup
-  1. From your terminal, `cd` back to your parent directory
-  2. Clone down this repository:
-    ``````
-  3. `cd` into `ny-times` directory and run:
-    ```npm install npm start```
     
 ## Environment Variables
 
