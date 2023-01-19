@@ -5,3 +5,7 @@
     left: 1em;
     border-radius: 12px;
 }
+
+.filter-dropDown select {
+border-radius: 6px;
+}

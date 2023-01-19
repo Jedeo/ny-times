@@ -3,7 +3,6 @@ import "./Filter.css";
 const Filter = ({ filter, allArticles, setFiltered }) => {
   const options = filter.map((option) => (
     <option key={option} value={option}>
-      {" "}
       {option}
     </option>
   ));
